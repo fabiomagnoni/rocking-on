@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html manifest="platformer.cache">
+<!-- 
+  HTML5 Modern Platformer game
+
+ Inspired by the Microsoft XNA Community Game Platformer Sample
+ Copyright (C) Microsoft Corporation. All rights reserved.
+ Ported to HTML5 Canvas with EaselJS by David Rousset - http://blogs.msdn.com/davrous
+ Checkout EaselJS: an open-source JavaScript gaming framework : http://easeljs.com
+-->
+<head>
+    <title>HTML5 Platformer Game</title>
+    <link rel="shortcut icon" href="./icons/favicon.ico" />
+    <meta name="msapplication-task" content="name=XNA 4.0 Platformer Sample;action-uri=http://create.msdn.com/en-US/education/catalog/sample/platformer;icon-uri=./icons/XNA.ico" />
+    <meta name="msapplication-task" content="name=Tutorial: Animating sprites in Canvas with EaselJS;action-uri=http://blogs.msdn.com/b/davrous/archive/2011/07/21/html5-gaming-animating-sprites-in-canvas-with-easeljs.aspx;icon-uri=./icons/blogicon.ico" />
+    <meta name="msapplication-task" content="name=Tutorial: Building the core objects & handling collisions with EaselJS;action-uri=http://blogs.msdn.com/b/davrous/archive/2011/07/29/html5-gaming-building-the-core-objects-amp-handling-collisions-with-easeljs.aspx;icon-uri=./icons/blogicon.ico" />
+    <meta name="msapplication-task" content="name=Build my pinned site;action-uri=http://buildmypinnedsite.com;icon-uri=./icons/mypinnedsites.ico" />
+    <link href="modernplatformer.css" rel="stylesheet">
+
+    <script src="src/easeljs/ModernizrCSS3.js"></script>
+
+    <script>
+        createjs = window;		
+        createjs.Touch.Enable(stage);		
+    </script>
+
+    <!-- Import EaselJS Framework -->
+<script src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
+
+    <script src="src/easeljs/XNARectangle.js"></script>
+    <script src="src/easeljs/PlatformerHelper.js"></script>
+    <script src="src/easeljs/ContentManager.js"></script>
+    <script src="src/easeljs/Tile.js"></script>
+    <script src="src/easeljs/Gem.js"></script>
+    <script src="src/easeljs/Enemy.js"></script>
+    <script src="src/easeljs/Player.js"></script>
+    <script src="src/easeljs/Level.js"></script>
+    <script src="src/easeljs/PlatformerGame.js"></script>
+    <script src="src/easeljs/dragDropLogic.js"></script>
+    <script src="src/easeljs/main.js"></script>
+
+</head>
+<body onload="initGameLogic();">
+    <div class="canvasHolder">
+        <canvas id="platformerCanvas" width="800" height="480" class="initialRotation">Your
+            browser doesn't support canvas. Please download IE9+ on <a href="http://ie.microsoft.com/testdrive">
+                IE Test Drive</a>
+        </canvas>
+    </div>
+</body>
+</html>

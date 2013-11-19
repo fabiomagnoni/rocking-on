@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "name": "Jogo Meu",
+  "launch_path": "index.html",
+  "description": "Meu Jogo",
+  "icons": {
+    "16": "assets/image/16.png",
+	"32": "assets/image/32.png",
+	"64": "assets/image/64.png",
+	"128": "assets/image/128.png"
+  },
+  "developer": {
+    "name": "Desenvolvedores: Kleber de Jesus Dias, Rafael Lazarin; Designer: Lucas de Oliveira",
+    "url": "www.google.com.br"
+  },
+  "installs_allowed_from": ["*"],
+  "default_locale": "pt"
+}
